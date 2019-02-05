@@ -1,6 +1,6 @@
 {
   "name": "edit-briefly",
-  "description": "Edit content in a temporary file in your $EDITOR.",
+  "description": "Edit content inside the users preferred editor (set via `$VISUAL`/`$EDITOR`).",
   "version": "0.0.1",
   "license": "MIT",
   "repository": "sebald/edit-briefly",
@@ -17,7 +17,6 @@
   },
   "main": "lib/index.js",
   "files": [
-    "bin",
     "lib"
   ],
   "husky": {
