@@ -5,7 +5,7 @@ export type OpenEditorConfig = {
   file: string;
 } & EditorConfig;
 
-export const openEditor = async ({
+export const openEditor = ({
   file,
   ...editor
 }: OpenEditorConfig): Promise<{}> =>

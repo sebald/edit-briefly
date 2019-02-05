@@ -11,16 +11,13 @@ const readFile = promisify(fs.readFile);
 const encoding = 'utf8';
 
 export type EditConfig = {
-  contents: string;
-  extension: string;
+  contents?: string;
+  extension?: string;
 };
 
-export const edit = async ({
-  contents,
-  extension,
-}: EditConfig): Promise<string> => {
-  const file = tempy.file({ extension });
-  await writeFile(file, contents, { encoding });
+export const edit = async (config: EditConfig = {}): Promise<string> => {
+  const file = tempy.file({ extension: config.extension || '' });
+  await writeFile(file, config.contents || '', { encoding });
   await openEditor({ file, ...getEditor() });
   return readFile(file, { encoding });
 };

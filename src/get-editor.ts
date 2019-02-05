@@ -33,7 +33,7 @@ export const getEditor = (): EditorConfig => {
     ? 'notepad'
     : 'vim';
 
-  const [bin, ...args] = editor.trim().split(/[/\\ ]/);
+  const [bin, ...args] = editor.trim().split(' ');
 
   return {
     bin,
