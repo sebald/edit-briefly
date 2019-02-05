@@ -34,6 +34,11 @@ afterEach(() => {
   process.env = ORIGINAL_ENV;
 });
 
+test('returns file contens', async () => {
+  const contents = await edit({ contents: 'hello' });
+  expect(contents).toMatchInlineSnapshot(`"Rainbows and Unicorns"`);
+});
+
 test('e2e', async () => {
   await edit({ contents: 'hello' });
   const contents = await readFile(file, { encoding: 'utf8' });
