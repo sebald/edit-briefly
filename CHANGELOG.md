@@ -1,3 +1,9 @@
+# [2.1.0](https://github.com/sebald/edit-briefly/compare/v2.0.0...v2.1.0) (2019-02-12)
+
+### Tooling
+
+- Improve publish step ([166664d](https://github.com/sebald/edit-briefly/commit/166664d))
+
 # [2.0.0](https://github.com/sebald/edit-briefly/compare/v1.0.0...v2.0.0) (2019-02-12)
 
 ### Features
