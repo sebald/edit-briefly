@@ -1,4 +1,14 @@
-# 1.0.0 (2019-02-05)
+# [2.0.0](https://github.com/sebald/edit-briefly/compare/v1.0.0...v2.0.0) (2019-02-12)
+
+### Features
+
+- Move cursor to EOF if possible (#1) ([d3eacd1](https://github.com/sebald/edit-briefly/commit/d3eacd1)), closes [#1](https://github.com/sebald/edit-briefly/issues/1)
+
+### Documentation
+
+- Update readme ([5b2a84a](https://github.com/sebald/edit-briefly/commit/5b2a84a))
+
+# [1.0.0](https://github.com/sebald/edit-briefly/compare/1387df3...v1.0.0) (2019-02-05)
 
 ### Tests
 
