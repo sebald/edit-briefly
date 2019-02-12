@@ -9,6 +9,7 @@ Like the mentioned module, `edit-briefly` will also allow to you open the user's
 
 - open the editor with some initial content (think commit message template)
 - set an extension for the temporary file (to enable highliting)
+- move cursor to end of file contents
 
 ## Install
 
@@ -41,7 +42,7 @@ import { edit } from 'edit-briefly';
 import { edit } from 'edit-briefly';
 
 (async () => {
-  const contents = await edit({ contents: '# Title\n\n', extension: 'md' });
+  const contents = await edit('# Title\n\n', { extension: 'md' });
   // -> opens a temporary existing file with md extension and filled with contents.
 })();
 ```
